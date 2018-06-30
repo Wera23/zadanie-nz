@@ -1,0 +1,155 @@
+body{
+    color: #000000;
+    font-family: arial;
+    font-size: 14px;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+/* ułożenie elementów, przypisanie area, background-color, wymiary*/
+
+.grid-container{
+    display: grid;
+
+    grid-template-columns: 22.2vw 77.8vw;
+    grid-auto-rows: 19vh 24vh 57vh;
+
+    grid-template-areas:
+    "sidebar header"
+    "topbar topbar"
+    "sidebar2 content";
+
+    grid-gap: 0;
+}
+
+.header{
+    display: flex;
+    flex-direction: column;
+
+    grid-area: header;
+}
+
+.header .logo{
+    background-color: #ffffff;
+    height: 73.7vh;
+    
+}
+
+.header .navigacja{
+    background-color: #bfbfbf;
+    height: 22.3vh;
+         
+}
+
+.sidebar{
+    background-color: #ff0700;
+    grid-area: sidebar;
+}
+
+.sidebar2{
+    grid-area: sidebar2;
+}
+
+.topbar{
+    background-color: #24ff00;
+    grid-area: topbar;
+    
+}
+
+.content{
+    background-color: #dcdcdc;
+    grid-area: content;
+    
+}
+
+.content,
+.sidebar2{
+    padding: 30px;
+}
+
+/*właściwości linków, menu, nagłówków*/
+
+ul li{
+    list-style: none;
+    text-transform: uppercase;    
+}
+
+ul li a{
+    text-decoration: none;
+}
+
+.p-content,
+.p-wiecej{
+    margin-top: 45px;
+}
+
+.p-wiecej a{
+    color: black;
+    text-decoration: none;
+    font-style: italic;
+    
+}
+
+.p-wiecej::before{
+    content: url("images/img.jpg");
+    padding: 5px;
+}
+
+.link-article{
+    color: black;
+}
+
+/* dot. menu w nawigacji*/
+
+#nav{
+    background-color: #bfbfbf;    
+}
+
+.ul-nav{
+    display: flex;
+    flex-direction: row;
+    
+    justify-content: space-around;  
+
+    padding-top: 15px;
+
+}
+
+.ul-nav a{
+    font-weight: bold;
+    color: black;
+    
+}
+
+
+/*dot. menu bocznego*/
+
+.menu .ul-menu li{
+    margin-top: 15px;
+}
+
+.menu .ul-menu li::before{
+    
+    content: "-->";
+    margin-right: 10px;
+    color: #00309e;
+  
+}
+
+.menu .ul-menu a,
+h2{
+    color: #00309e;
+    text-transform: uppercase;
+    font-weight: 100;
+      
+}
+
+.ul-menu a:hover{
+    font-weight: bold;
+}
+
+
+
