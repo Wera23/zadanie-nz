@@ -1,0 +1,28 @@
+{
+  "name": "zadanie",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.html",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Wera23/zadanie-nz.git"
+  },
+  "keywords": [
+    "zadanie"
+  ],
+  "author": "Weronika Chodanionek",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Wera23/zadanie-nz/issues"
+  },
+  "homepage": "https://github.com/Wera23/zadanie-nz#readme",
+  "devDependencies": {
+    "gulp": "^3.9.1",
+    "gulp-autoprefixer": "^5.0.0",
+    "gulp-pleeease": "^2.0.2",
+    "gulp-sass": "^4.0.1"
+  }
+}
